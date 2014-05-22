@@ -1,0 +1,14 @@
+1./s.split('').shuffle.join
+2/["salut","tu","vas","bien"].map{ |s| string_shuffle(s)}
+3/
+class String
+      def shuffle
+      	  self.split('').shuffle.join
+      end
+end
+4/
+person1 = { ":nom"=>"Hartl", ":prenom"=>"Michael"}
+person2 = { ":nom"=>"Hartl", ":prenom"=>"Maria"}
+person3 = { ":nom"=>"Hartl", ":prenom"=>"John"}
+params = { ":pere"=>person1, ":mere"=>person2, ":pere"=>person3}
+print params[":pere"][":first"]
