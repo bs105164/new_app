@@ -179,3 +179,13 @@ aside {
 		margin-bottom: 5px;
 	}
 }
+/* feed item */
+.feed_item {
+	   list_style: none;
+   margin: 10px 0 0 0;
+  
+   li {
+      padding: 10px 0;
+      border_top: 1px solid #e8e8e8;
+   }
+}
