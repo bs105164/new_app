@@ -6,9 +6,12 @@ gem 'rails', '4.0.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+gem 'bcrypt-ruby', '3.1.2'
+gem 'protected_attributes'
 gem 'bootstrap-sass', '2.0.4'
 gem 'sprockets'
 group :development do
+      gem 'annotate', '2.5.0'
       gem 'rspec-rails', '2.14.1'
 end
 
