@@ -36,6 +36,7 @@ module SessionsHelper
   def store_location
     session[:return_to] = request.url
   end
+ 
 
   def current_user
     if !cookies[:remember_token].nil?
