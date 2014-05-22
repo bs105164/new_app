@@ -1,1 +1,16 @@
-<%= @user.name %> <%= @user.email %>
+<% provide(:title, @user.name) %>
+<div class="row">
+  <h1><%= @user.name %></h1>
+  <aside>
+	<%= @user.email %>
+  </aside>
+  <div class="span8">
+    <% if @user.microposts.any? %>
+	  <h3>Microposts (<%= @user.microposts.count %>
+          <ol class="microposts">
+	  	<%=  render @microposts %>
+  	  </ol>
+	  <%= will_paginate @microposts %>
+    <% end %>
+  </div>
+</div>
